@@ -1,0 +1,56 @@
+.Main {
+    height: 85px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.LeftNav img {
+    height: auto-fit;
+    width: 100px;
+    cursor: pointer;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.RightNav {
+    text-decoration: none;
+    display: flex;
+    color: black;
+    gap: 30px;
+    align-items: center;
+}
+
+.RightNav a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-family);
+    font-weight: 200;
+}
+
+.RightNav button {
+    background: linear-gradient(135deg, rgb(36, 116, 214), rgb(236, 244, 255));
+    padding: 10px;
+    border-radius: 1rem;
+    border-style: none;
+    cursor: pointer;
+   font-family: var(--font-family);
+    color: white;
+    width: 80px;
+
+}
+
+
+.RightNav button:hover {
+   font-family: var(--font-family);
+    background: linear-gradient(135deg, rgb(236, 244, 255), rgb(36, 116, 214));
+}

@@ -1,0 +1,37 @@
+.main{
+    display: flex;
+       justify-content: space-between;
+       width: 75%;
+       position: static;
+       transition: ease 2s;
+}
+.scrollMain{
+    display: none;
+}
+.allMain{   
+height: 45px;
+    width: 100%;
+     background-color: rgb(39, 119, 232);
+justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.mainNav{
+    width: 90%;
+    display: flex;
+    gap: 15px;
+
+}
+.mainNav a{
+color: white;
+}
+.right{
+    gap: 15px;
+color: white;
+    display: flex;
+}
+.right p{
+    font-weight: 100;
+    font-family: var(--font-family);
+}
