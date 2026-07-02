@@ -15,8 +15,7 @@ export default function MainNav() {
           </div>
           <div className={Css["RightNav"]}>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#course">Courses</a>
+            <a href="#experience">My Experience</a>
 
             <motion.button
               whileHover={{

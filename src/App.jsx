@@ -2,9 +2,8 @@ import './App.css'
 import Navbar from "./Components/NavBar/NavBar"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainNav from './Components/MainNav/MainNav';
-import Home from './Components/Home/Home';
-import About from "./Components/About/About"
-import Course from "./Components/Course/Course"
+import Home from "./Components/Home/Home"
+import Experience from "./Components/Experience/Experience"
 import Contact from "./Components/Contact/Contact"
 import Footer from "./Components/Footer/Footer"
 import Lenis from "lenis";
@@ -26,8 +25,7 @@ return()=>{
         <Navbar />
         <MainNav />
         <Home/>
-       <About/>
-       <Course/>
+       <Experience/>
        <Contact/>
      <Footer/>
       </BrowserRouter>

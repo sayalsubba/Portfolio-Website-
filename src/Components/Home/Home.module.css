@@ -1,4 +1,52 @@
-.main{
-    height: 100vh;
+.main {
+    height: inherit;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.hero{
+position: absolute;
+z-index: -1000;
+display: flex;
+transform: translateX(-300px);
+}
+
+.mainHome {
+    gap: 50px;
+    display: grid;
+    justify-items: center;
+    width: 75%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rightMain img {
+    height: 450px;
+    width: 350px;
+}
+
+.leftMain button {
+    margin-top: 50px;
+    background: linear-gradient(135deg, rgb(36, 116, 214), rgb(236, 244, 255));
+    padding: 10px;
+    border-radius: 1rem;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+}
+
+.leftMain h1 {
+    font-style: var(--font-family);
+    margin-top: 15px;
+}
+
+.leftMain {
+    padding-top: 90px;
+}
+
+.leftMain p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-style: var(--font-family);
 }
