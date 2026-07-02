@@ -1,12 +1,12 @@
 .main{
-    height: 100vh;
+    height: inherit;
     width: 100%;
     display: flex;
 justify-content: center;
-border: solid red;
 padding-top:100px ;
 }
 .mainContact{
     width: 75%;
-    height: 100vh;
+    
+    height: inherit;
 }
