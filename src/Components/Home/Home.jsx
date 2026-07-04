@@ -1,9 +1,10 @@
 import React from 'react'
 import Css from "./Home.module.css"
-
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { motion, scale } from "framer-motion"
 import profile from "../../Assets/img1.webp"
 import Hero from "../../Assets/herobg.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Home() {
   const container = {
     hidden: { opacity: 0, },
@@ -17,7 +18,7 @@ export default function Home() {
     <>
 
       <div className={Css["main"]} id='home'>
-        <img src={Hero} className={Css["hero"]}   alt="" />
+        <img src={Hero} className={Css["hero"]} alt="" />
         <div className={Css["mainHome"]}>
           <motion.div
             variants={container} initial="hidden" whileInView="visible"
@@ -29,10 +30,18 @@ export default function Home() {
             <motion.p variants={item}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </motion.p>
             <motion.button variants={container} whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", damping: 15 }}
-              whileTap={{ scale: 0.9 }}>
+              whileTap={{ scale: 0.9,y:-10 }}>
               Download CV
             </motion.button>
+            <motion.div className={Css["mainFont"]}>
+       <span>Follow </span>
+              <FontAwesomeIcon icon={faFacebook} />
+              <FontAwesomeIcon icon={faFacebook} />
+              <FontAwesomeIcon icon={faFacebook} />
+                  
+            </motion.div>
           </motion.div >
+
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

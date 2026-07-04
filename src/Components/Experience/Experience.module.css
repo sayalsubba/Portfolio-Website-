@@ -4,11 +4,11 @@
     padding-top: 90px;
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
+
 }
 
 .mainExperience {
-
     width: 75%;
     text-align: center;
     font-family: var(--font-family);
@@ -19,18 +19,15 @@ align-items: center;
 }
 
 .mainExperienceCard {
-   
     width: 75%;
-    margin-top: 20px;
+    margin-top: 50px;
     gap: 15px;
     display: grid;
     justify-content: center;
-place-items: center;  
-    grid-template-columns:repeat(auto-fit,minmax(150px, 1fr));
-
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .mainExperienceCard img {
     height: 100px;
-
 }
