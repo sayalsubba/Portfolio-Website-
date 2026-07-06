@@ -25,25 +25,27 @@ export default function Home() {
 
             viewport={{ once: true, amount: 0.2 }}
             className={Css["leftMain"]}>
-            <motion.p variants={item}>How it Works?</motion.p>
+            <motion.p variants={item} style={{ color: "var(--primary-color)" }}  >How it Works?</motion.p>
             <motion.h1 variants={item}>We Help You Prioritize Your Project</motion.h1>
             <motion.p variants={item}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </motion.p>
             <motion.button variants={container} whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", damping: 15 }}
-              whileTap={{ scale: 0.9,y:-10 }}>
+              whileTap={{ scale: 0.9, y: -10 }}>
               Download CV
             </motion.button>
-            <motion.div className={Css["mainFont"]}>
-       <span>Follow </span>
-              <FontAwesomeIcon icon={faFacebook} />
-              <FontAwesomeIcon icon={faFacebook} />
-              <FontAwesomeIcon icon={faFacebook} />
-                  
+            <motion.div 
+            className={Css["mainFont"]} variants={container}>
+              <span>Follow </span>
+              <motion.a whileHover={{scale:1.1,transition:{duration:0.5}}} variants={item} href=""><FontAwesomeIcon icon={faFacebook} /></motion.a>
+              <motion.a whileHover={{scale:1.1,transition:{duration:0.5}}} variants={item} href=''><FontAwesomeIcon icon={faFacebook} /></motion.a>
+              <motion.a whileHover={{scale:1.1,transition:{duration:0.5}}} variants={item} href=''><FontAwesomeIcon icon={faFacebook} /></motion.a>
+
             </motion.div>
           </motion.div >
 
 
           <motion.div
+       
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
             viewport={{ once: true, amount: 0.2 }}

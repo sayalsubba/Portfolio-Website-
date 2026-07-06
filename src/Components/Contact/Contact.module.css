@@ -3,10 +3,16 @@
     width: 100%;
     display: flex;
 justify-content: center;
-padding-top:100px ;
+padding-top:60px ;
+padding-bottom: 60px;
+align-items: center;
+border: solid red;
 }
 .mainContact{
     width: 75%;
-    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: inherit;
 }

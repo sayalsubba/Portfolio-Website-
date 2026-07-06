@@ -35,6 +35,23 @@
     color: black;
     font-family: var(--font-family);
     font-weight: 200;
+      position: relative;
+      padding: 10px;
+}
+.RightNav a:not(:has(button))::after{
+content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #3498db;
+  transform: scaleX(0);
+    transform-origin: center; /* expand from center */
+transition: 0.4s ease;
+}
+.RightNav a:not(:has(button)):hover::after{
+transform: scaleX(1);
 }
 
 .RightNav button {
@@ -46,10 +63,7 @@
    font-family: var(--font-family);
     color: white;
     width: 80px;
-
 }
-
-
 .RightNav button:hover {
    font-family: var(--font-family);
     background: linear-gradient(135deg, rgb(236, 244, 255), rgb(36, 116, 214));

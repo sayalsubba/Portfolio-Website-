@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 .hero{
@@ -50,8 +51,27 @@ transform: translateX(-300px);
     margin-top: 15px;
     font-style: var(--font-family);
 }
+.mainP p{
+    color: var(--primary-color);
+}
 .mainFont{
     display: flex;
 gap: 10px;
 margin-top: 50px;
+
+}
+.mainFont span{
+    transform: translateY(9px);
+}
+.mainFont a{
+    background-color: rgba(240, 230, 230, 0.698);
+    backdrop-filter:blur(1);
+    border-radius: 1rem;
+    padding: 10px;
+    color:black ;
+    text-decoration: none;
+}
+.mainFont a:hover{
+color: white;
+background-color: var(--primary-color);
 }

@@ -7,4 +7,6 @@
     position: absolute;
     align-items: center;
     color: white;
+    font-family: var(--font-family);
+font-weight: 100;
 }
