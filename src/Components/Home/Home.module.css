@@ -62,6 +62,7 @@ margin-top: 50px;
 }
 .mainFont span{
     transform: translateY(9px);
+    z-index: -1;
 }
 .mainFont a{
     background-color: rgba(240, 230, 230, 0.698);
